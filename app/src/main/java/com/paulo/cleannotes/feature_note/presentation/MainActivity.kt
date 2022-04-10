@@ -20,7 +20,9 @@ import com.paulo.cleannotes.feature_note.presentation.add_edit_note.AddEditNoteS
 import com.paulo.cleannotes.feature_note.presentation.notes.NotesScreen
 import com.paulo.cleannotes.feature_note.presentation.util.Screen
 import com.paulo.cleannotes.ui.theme.CleanNotesTheme
+import dagger.hilt.android.AndroidEntryPoint
 
+@AndroidEntryPoint
 class MainActivity : ComponentActivity() {
     @OptIn(ExperimentalAnimationApi::class)
     override fun onCreate(savedInstanceState: Bundle?) {
