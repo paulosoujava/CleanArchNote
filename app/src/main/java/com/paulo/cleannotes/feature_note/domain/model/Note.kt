@@ -3,6 +3,7 @@ package com.paulo.cleannotes.feature_note.domain.model
 import androidx.room.Entity
 import androidx.room.PrimaryKey
 import com.paulo.cleannotes.ui.theme.*
+import java.lang.Exception
 
 @Entity
 data class Note(
@@ -22,3 +23,5 @@ data class Note(
         )
     }
 }
+
+class InvalidNoteException(message: String): Exception(message)
